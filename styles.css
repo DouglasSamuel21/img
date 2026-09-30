@@ -1,0 +1,427 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    background: #050505;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+
+/* =========================
+   ABERTURA
+========================= */
+
+.inicio {
+    width: 100%;
+    min-height: 100svh;
+
+    padding: 25px 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle at 50% 35%,
+            #4a171d 0%,
+            #2a0d11 45%,
+            #120608 100%
+        );
+}
+
+
+/* TOPO */
+
+.topo {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 25px;
+}
+
+.topo p {
+    font-size: 18px;
+    letter-spacing: 4px;
+    color: #f7dede;
+}
+
+.coracao {
+    color: #ff6974;
+    font-size: 26px;
+}
+
+
+/* FOTO DA ABERTURA */
+
+.foto-intro {
+    width: 82vw;
+    height: 82vw;
+
+    max-width: 310px;
+    max-height: 310px;
+
+    margin-top: 5px;
+
+    border-radius: 18px;
+    overflow: hidden;
+
+    border: 1px solid rgba(255, 150, 155, .5);
+
+    box-shadow:
+        0 20px 45px rgba(0, 0, 0, .45),
+        0 0 30px rgba(255, 80, 90, .12);
+}
+
+.foto-intro img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/* FRASE */
+
+.frase-romantica {
+    margin-top: 20px;
+
+    font-family: 'Parisienne', cursive;
+
+    font-size: 35px;
+
+    color: #ff9a9f;
+}
+
+
+/* TITULO */
+
+.inicio h1 {
+    margin-top: 5px;
+
+    font-family: 'DM Serif Display', serif;
+
+    font-size: 45px;
+    line-height: .98;
+
+    font-weight: 400;
+}
+
+
+/* TEXTO */
+
+.texto-intro {
+    width: 100%;
+    max-width: 330px;
+
+    margin-top: 22px;
+
+    font-size: 18px;
+    line-height: 1.8;
+
+    font-weight: 300;
+
+    color: #ded1d2;
+}
+
+
+/* INDICAÇÃO DE ROLAGEM */
+
+.rolagem {
+    margin-top: auto;
+
+    padding-top: 25px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 5px;
+}
+
+.rolagem span {
+    font-size: 15px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 3px;
+
+    color: #bdaeb0;
+}
+
+.seta {
+    font-size: 22px;
+
+    color: #ff6974;
+
+    animation: seta 1.5s infinite ease-in-out;
+}
+
+@keyframes seta {
+
+    0% {
+        transform: translateY(0);
+        opacity: .5;
+    }
+
+    50% {
+        transform: translateY(8px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: .5;
+    }
+
+}
+
+
+/* =========================
+   HISTÓRIA
+========================= */
+
+.historia {
+    width: 100%;
+
+    background: #050505;
+
+    padding:
+        12vh
+        20px
+        25vh;
+
+    text-align: center;
+}
+
+
+/* FOTO */
+
+.foto-historia {
+    width: 82vw;
+    height: 82vw;
+
+    max-width: 330px;
+    max-height: 330px;
+
+    margin: 0 auto;
+
+    overflow: hidden;
+
+    border-radius: 18px;
+
+    border: 2px solid #ff2148;
+
+    transform: rotate(-1deg);
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, .7),
+        0 0 25px rgba(255, 20, 60, .12);
+}
+
+.foto-historia img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/* TITULO */
+
+.titulo-historia {
+    margin-top: 55vh;
+}
+
+.titulo-historia h1 {
+    margin: 0;
+
+    font-family: 'Parisienne', cursive;
+
+    font-size: 46px;
+
+    line-height: 1.05;
+
+    font-weight: 400;
+
+    color: #ff2148;
+}
+
+
+/* TEXTO */
+
+.texto-historia {
+    margin-top: 35vh;
+
+    max-width: 340px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.texto-historia p {
+    margin: 0;
+
+    font-size: 26px;
+
+    line-height: 1.8;
+
+    font-weight: 300;
+
+    color: #e5e5e5;
+}
+
+
+/* =========================
+   FINAL
+========================= */
+
+.final {
+    width: 100%;
+
+    min-height: 100svh;
+
+    padding:
+        12vh
+        20px
+        15vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle at 50% 40%,
+            #321016 0%,
+            #120608 55%,
+            #050505 100%
+        );
+}
+
+
+/* FOTO FINAL */
+
+.foto-final {
+    width: 82vw;
+    height: 82vw;
+
+    max-width: 330px;
+    max-height: 330px;
+
+    overflow: hidden;
+
+    border-radius: 20px;
+
+    border: 2px solid #ff6974;
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, .6),
+        0 0 30px rgba(255, 60, 80, .15);
+}
+
+.foto-final img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/* FRASE FINAL */
+
+.frase-final {
+    margin-top: 30px;
+
+    font-family: 'Parisienne', cursive;
+
+    font-size: 38px;
+
+    color: #ff6974;
+}
+
+
+/* TITULO FINAL */
+
+.final h1 {
+    margin-top: 15px;
+
+    font-family: 'DM Serif Display', serif;
+
+    font-size: 38px;
+
+    line-height: 1.05;
+
+    font-weight: 400;
+}
+
+
+/* TEXTO FINAL */
+
+.texto-final {
+    max-width: 330px;
+
+    margin-top: 25px;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+
+    color: #ded1d2;
+}
+
+
+/* CORAÇÃO */
+
+.coracao-final {
+    margin-top: 35px;
+
+    font-size: 30px;
+
+    color: #ff2148;
+
+    animation: pulsar 1.5s infinite ease-in-out;
+}
+
+@keyframes pulsar {
+
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}
